@@ -118,7 +118,7 @@ h2.title {
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header, .finish .finish_header {
+.waiting .waiting_header, .finish .finish_header, .first_webinar .first_webinar_text {
     font-family: Roboto;
     font-size: 30px;
     font-weight: 400;
@@ -139,13 +139,17 @@ h2.title {
     margin-top: 18px;
 }
 
-.waiting .waiting_subheader {
+.waiting .waiting_subheader, .first_webinar .first_webinar_subtitle {
     margin-top: 17px;
     font-family: Roboto;
     font-size: 23px;
     font-weight: 400;
     color: #4a4a4a;
     text-align: center;
+}
+
+.first_webinar .first_webinar_subtitle {
+    margin-top: 25px;
 }
 
 .waiting .waiting_wrapper {
@@ -260,3 +264,29 @@ h2.title {
     color: #252525;
     text-align: center;
 }
+
+.first_webinar {
+    min-height: 515x;
+    padding: 89px 0 64px 0;
+}
+
+.first_webinar .first_webinar_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.first_webinar .first_webinar_text {
+    margin-top: 37px;
+    text-align: center;
+}
+
+.first_webinar .first_webinar_date {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #299cbd;
+    text-align: center;
+}
+
