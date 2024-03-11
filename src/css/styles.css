@@ -1,0 +1,12 @@
+header {
+    height: 51px;
+    background-color: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    margin: 0;
+    list-style-type: none;
+}
