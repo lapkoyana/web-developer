@@ -138,3 +138,51 @@ nav {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
+
+.reasons {
+  min-height: 900px;
+  padding: 71px 0 65px 0;
+}
+
+.reasons .reasons_btn {
+  display: block;
+  margin: 0 auto;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  border: none;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.reasons .reasons_header {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.reasons .reasons_item {
+  /*кроме первого*/
+  margin-top: 24px;
+  /*не уверена*/
+  display: flex;
+}
+
+.reasons .reasons_descr {
+  margin-left: 25px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 300;
+  color: #202020;
+}
+
+.reasons .reasons_descr span {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #1eacc7;
+}
