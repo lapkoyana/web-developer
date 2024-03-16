@@ -168,8 +168,13 @@ nav {
 .reasons .reasons_item {
   /*кроме первого*/
   margin-top: 24px;
-  /*не уверена*/
   display: flex;
+  padding: 0 35px;
+}
+
+.reasons .reasons_img {
+  height: 100%;
+  padding-top: 10px;
 }
 
 .reasons .reasons_descr {
