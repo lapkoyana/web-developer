@@ -1,5 +1,10 @@
 $pacific_blue: #1eacc7
 
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: $pacific_blue
+
 *
   font-family: "Roboto", sans-serif
   box-sizing: border-box
@@ -107,7 +112,7 @@ nav
     text-transform: uppercase
     color: #ffffff
 
-  .subheader_btn
+  &_btn
     margin-top: 16px
     width: 178px
     height: 52px
@@ -120,6 +125,8 @@ nav
     text-transform: uppercase
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
     color: #ffffff
+
+    @include btn_hover
 
 .promo
   min-height: 748px
@@ -153,7 +160,7 @@ nav
     font-weight: 400
     color: #ffffff
 
-  .promo_btn
+  &_btn
     display: block
     margin: 0 auto
     margin-top: 115px
@@ -168,6 +175,8 @@ nav
     text-transform: uppercase
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
     color: #ffffff
+
+    @include btn_hover
 
 .reasons
   min-height: 900px
@@ -252,8 +261,28 @@ nav
         border-radius: 100%
         cursor: pointer
 
-        img
-          width: 50%
+        &:before
+          content: ''
+          display: block
+          height: 2px
+          width: 14px
+          background-color: $pacific_blue
+          tarnsition: 0.5s all
+
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          height: 14px
+          width: 2px
+          background-color: $pacific_blue
+          transition: 0.5s all
+
+        &:hover
+          &:before, &:after
+            background-color: #ffffff
 
 .choise
   position: relative
