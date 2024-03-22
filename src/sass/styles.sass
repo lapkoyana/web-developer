@@ -1,4 +1,5 @@
 $pacific_blue: #1eacc7
+$green_blue: #1fbad6
 
 @mixin btn_hover
   &:hover
@@ -371,9 +372,64 @@ nav
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none
-    color: #1fbad6;
+    color: $green_blue;
 
     &:hover
       color: #fff
+
+footer
+  min-height: 156px
+  padding: 14px 23px 39px 23px
+  .footer
+    &_divider
+      margin: 0 auto
+      width: 299px;
+      height: 4px;
+      background-color: $green_blue
+    &_wrapper
+      display: flex
+      justify-content: space-between
+      padding-top: 32px
+
+    &_wrapper > div
+      width: 33%
+    
+    &_social
+      display: flex
+      justify-content: space-between
+      width: 156px
+
+    &_links
+      width: 390px
+      margin: 0 auto
+      &_main
+        display: flex
+        justify-content: space-between
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #070716;
+      &_sub
+        display: flex
+        justify-content: space-between
+        margin-top: 16px
+        font-size: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #999999;
+      &_lang
+        display: block
+        margin-top: 16px
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $green_blue;
+
+      a
+        text-decoration: none
+
+    &_mobile
+      display: flex
+      justify-content: flex-end
 
 
