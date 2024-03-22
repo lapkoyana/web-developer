@@ -1,5 +1,6 @@
 $pacific_blue: #1eacc7
 $green_blue: #1fbad6
+$vivid_darker_blue: #070716
 
 @mixin btn_hover
   &:hover
@@ -318,9 +319,9 @@ nav
   padding: 66px 0 87px 0
 
   &_item
-    font-size: 22px;
-    font-weight: 400;
-    color: #1ca8c3;
+    font-size: 22px
+    font-weight: 400
+    color: #1ca8c3
     margin: 31px 115px 31px 0
     &_list
       list-style: none
@@ -328,9 +329,9 @@ nav
       padding-left: 50px
       & li
         position: relative
-        font-size: 17px;
-        font-weight: 300;
-        color: #222222;
+        font-size: 17px
+        font-weight: 300
+        color: #222222
         margin-bottom: 10px
         &:before
           content: ''
@@ -343,8 +344,8 @@ nav
           background: url("../icons/item_blue.svg") center (center / cover) no-repeat
 
     &_descr
-      font-size: 17px;
-      font-weight: 300;
+      font-size: 17px
+      font-weight: 300
       margin-top: 20px
     &.mrgBtm0
       margin-bottom: 0
@@ -368,11 +369,11 @@ nav
     transform: translateX(-50%)
     left: 50%
     bottom: 49px
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
     text-decoration: none
-    color: $green_blue;
+    color: $green_blue
 
     &:hover
       color: #fff
@@ -384,8 +385,8 @@ footer
   .footer
     &_divider
       margin: 0 auto
-      width: 299px;
-      height: 4px;
+      width: 299px
+      height: 4px
       background-color: $green_blue
     &_wrapper
       display: flex
@@ -399,6 +400,19 @@ footer
       display: flex
       justify-content: space-between
       width: 156px
+      a 
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: $vivid_darker_blue
+        color: #fff
+        border-radius: 100%
+        height: 34px
+        width: 34px
+        text-decoration: none
+        
+        span
+          font-size: 16px
 
     &_links
       width: 390px
@@ -406,18 +420,18 @@ footer
       &_main
         display: flex
         justify-content: space-between
-        font-size: 15px;
-        font-weight: 300;
-        text-transform: uppercase;
-        color: #070716;
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        color: $vivid_darker_blue
       &_sub
         display: flex
         justify-content: space-between
         margin-top: 16px
-        font-size: 11px;
-        font-weight: 300;
-        text-transform: uppercase;
-        color: #999999;
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        color: #999999
       &_lang
         display: block
         margin-top: 16px
@@ -439,7 +453,7 @@ footer
       bottom: 0
       left: 0
       width: 100%
-      height: 8px;
-      background-color: #070716;
+      height: 8px
+      background-color: $vivid_darker_blue
 
 
