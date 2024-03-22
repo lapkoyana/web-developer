@@ -313,5 +313,46 @@ nav
     height: 502px
     z-index: 1
 
-        
-    
+.conditions
+  padding: 66px 0 87px 0
+
+  &_item
+    font-size: 22px;
+    font-weight: 400;
+    color: #1ca8c3;
+    margin: 31px 115px 31px 0
+    &_list
+      list-style: none
+      margin-top: 20px
+      padding-left: 50px
+      & li
+        position: relative
+        font-size: 17px;
+        font-weight: 300;
+        color: #222222;
+        margin-bottom: 10px
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          left: -32px
+          top: 2px
+          width: 21px
+          height: 20px
+          background: url("../icons/item_blue.svg")
+
+    &_descr
+      font-size: 17px;
+      font-weight: 300;
+      margin-top: 20px
+    &.mrgBtm0
+      margin-bottom: 0
+
+    &.warning
+      color: #FF5656
+
+      .conditions_item_list
+        li
+          &:before
+            background: url("../icons/item_pink.svg")
+
